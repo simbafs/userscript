@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Free Quizlet
 // @namespace    https://github.com/simbafs/userscript
-// @version      1.0.3
+// @version      1.0.4
 // @description  免費用 quizlet
 // @author       simbafs
 // @match        https://quizlet.com/explanations/textbook-solutions/*
@@ -14,8 +14,22 @@
 (function() {
     'use strict';
     console.log('loading free quizlet')
+
     // render latex
-    document.querySelectorAll('.markdown-body').forEach(item => renderMathInElement(item))
+    renderMathInElement(document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{gather*}", right: "\\end{gather*}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+            {left: "\\[", right: "\\]", display: true},
+        ],
+    })
 
     // remove over layer
     document.querySelectorAll('.hideBelow--s').forEach(item => item.remove());
