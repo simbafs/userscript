@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         Free Quizlet
 // @namespace    https://github.com/simbafs/userscript
-// @version      1.1.0
+// @version      1.1.1
 // @description  免費用 quizlet
 // @author       simbafs
+// @updateURL    https://github.com/simbafs/userscript/raw/main/userscript/freeQuizlet.user.js
 // @match        https://quizlet.com/explanations/textbook-solutions/*
 // @require      https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
 // @require      https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js
