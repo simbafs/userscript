@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Free Quizlet
 // @namespace    https://github.com/simbafs/userscript
-// @version      1.1.2
+// @version      1.1.3
 // @description  免費用 quizlet
 // @author       simbafs
 // @updateURL    https://github.com/simbafs/userscript/raw/main/userscript/freeQuizlet.user.js
@@ -60,5 +60,6 @@ function createBtn(text, onclick){
     btn.style.top = '80px'
     btn.style.left = '20px'
     btn.style.fontSize = '1.5rem'
+    btn.style.zIndex = 99999
     return btn
 }
