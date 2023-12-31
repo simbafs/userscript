@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Free Quizlet
 // @namespace    https://github.com/simbafs/userscript
-// @version      1.1.3
+// @version      1.1.4
 // @description  免費用 quizlet
 // @author       simbafs
 // @updateURL    https://github.com/simbafs/userscript/raw/main/userscript/freeQuizlet.user.js
@@ -49,7 +49,7 @@ function clear(){
     document.querySelector('.ExplanationSolutionsContainer').classList.remove('hnqbbas');
 
     // remove blur when you login and reach limit
-    document.querySelectorAll('.b16n2kvb').forEach(item => item.classList.remove('b16n2kvb'))
+    document.querySelectorAll('.b1xkd811').forEach(item => item.classList.remove('b1xkd811'))
 }
 
 function createBtn(text, onclick){
